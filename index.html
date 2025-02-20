@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -20,10 +27,10 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main class="main">
+    <main class="main-container">
+      <!-- Sign-up form start -->
       <section class="container">
         <div class="content">
-          <!-- Sign-up form start -->
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul>
@@ -45,16 +52,38 @@
               Subscribe to monthly newsletter
             </button>
           </form>
-
-          <!-- Sign-up form end -->
-
-          <!-- Success message start -->
-
-          <!-- Success message end -->
         </div>
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+          class="desktop"
+        />
+        <img src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="illustration-sign-up-mobile" class="mobile"
+      </section>
+      <!-- Sign-up form end -->
+    </main>
+    <!-- Success message start -->
+    <main class="main-success">
+      <section class="container-success">
+        <div class="content">
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="icon-check"
+            class="icon"
+          />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span> ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription
+          </p>
+          <button class="input">Dismiss message</button>
+        </div>
       </section>
     </main>
+    <!-- Success message end -->
+
     <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
